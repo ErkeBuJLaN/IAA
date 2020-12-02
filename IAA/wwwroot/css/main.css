@@ -1,0 +1,23 @@
+body {
+  background-image: url("fon.jpg");
+}
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+img {
+    display: block;
+    max-width: 100%;
+  }
+  
+.ia {
+    width:90%;
+    display: flex;
+    justify-content: space-around;
+    margin: 40px auto;
+  }
+  
+.ia div {
+    width: 40%;
+  }

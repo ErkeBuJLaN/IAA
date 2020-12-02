@@ -1,0 +1,13 @@
+a1.knopka {
+  position: absolute;
+  margin-left: 80%;
+  margin-top: 35px;
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background: rgb(41, 126, 223); /* фон кнопки */
+  padding: .7em 1.5em; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */
+} 
+a1.knopka:hover { background: rgb(58, 216, 26); } /* при наведении курсора мышки */
+a1.knopka:active { background: rgb(16, 110, 199); } /* при нажатии */

@@ -1,0 +1,32 @@
+h1 {
+  margin-top: 7%;
+  text-align:center;
+  font-size:80px;
+  color:rgb(233, 47, 47);
+  position:relative;
+  left:0;
+  text-shadow:
+  1px 1px 0px #f16262,
+  2px 2px 0px #ec6b6b,
+  3px 3px 0px #f02424,
+  4px 4px 0px #f02424,
+  5px 5px 0px #f02424,
+  6px 6px 0px #f02424,
+  7px 7px 0px #f02424,
+  8px 8px 0px #f02424,
+  9px 9px 0px #f02424,
+  10px 10px 0px #ffffff,
+  15px 15px 25px rgba(0, 0, 0, 0.9);
+  transition: .5s ease-in-out;
+ }
+  
+ h1:hover {
+  left:20px;
+  text-shadow:
+  -1px 1px 0px #c4dbe2,
+  -2px 2px 0px #b4d1d9,
+  -3px 3px 0px #a6c6cf,
+  -4px 4px 0px #94b8c3,
+  -5px 5px 0px #87aeb9,
+  -6px 6px 0px #7aa3af,
+ }

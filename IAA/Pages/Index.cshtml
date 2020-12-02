@@ -1,0 +1,43 @@
+﻿@page
+@model IAA.Pages.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/intel.css">
+<link rel="stylesheet" href="css/amd.css">
+<link rel="stylesheet" href="css/obratnaya.css">
+<link rel="stylesheet" href="css/registr.css">
+<link rel="stylesheet" href="css/vxod.css">
+<link rel="stylesheet" href="css/pokupka.css">
+<title>IAA-PROJECT</title>
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" />
+<body>
+    <a asp-page="/Login">Вход</a>
+    <a asp-page="/Registr">Регистрация</a>
+    <h1>Intel and AMD</h1>
+
+    <div class="dws-wrapper">
+        <a href="info/intel/index.html">
+            <img src="img/intel.jpg" alt="Анимация при наведении">
+            <div class="dws-text">
+                <h3>Intel</h3>
+                <p>More Information</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="amd">
+        <a href="info/amd/index.html">
+            <img src="img/amd.jpg" alt="Анимация при наведении">
+            <div class="amdtext">
+                <h3>AMD</h3>
+                <p>More Information</p>
+
+            </div>
+        </a>
+    </div>
+</body>

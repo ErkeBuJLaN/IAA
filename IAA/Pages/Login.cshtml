@@ -1,0 +1,56 @@
+﻿@page
+@model IAA.Pages.LoginModel
+@{ }
+@using Microsoft.AspNetCore.Http;
+
+<h1>@ViewData["Title"]</h1>
+
+@if (HttpContext.Session.GetString("LoginState") == ("OK") && HttpContext.Session.GetString("LoginState") != null)
+{
+<h1 style="text-align:center">Welcome @HttpContext.Session.GetString("Login")</h1>
+                <form style="text-align:center" method="post" asp-page-handler="Logout">
+                    <input type="submit" value="Logout" />
+                </form>
+ }
+            else
+            {
+<link rel="stylesheet" href="~/css/Modal.css" />
+                <link rel="stylesheet" href="~/css/LoginForm.css" />
+                                <button class="Login" onclick="document.getElementById('id01').style.display='block'" style="text-align: center; width:auto; margin-left: 48%;">Login</button>
+                                                @if (HttpContext.Session.GetString("LoginState") == "ERROR")
+                                                {
+                                <h1 style="color: red; text-align:center">Incorrect login or password!</h1>}
+
+                                                                <div id="id01" class="modal">
+                                                                    <span onclick="document.getElementById('id01').style.display='none'"
+                                                                          class="close" title="Close Modal">&times;</span>
+                                                                    <form class="modal-content animate" method="post">
+                                                                        <div class="container">
+                                                                            <label for="uname"><b>Username</b></label>
+                                                                            <input type="text" placeholder="Enter Username" name="Login" required>
+
+                                                                            <label for="psw"><b>Password</b></label>
+                                                                            <input type="password" placeholder="Enter Password" name="Password" required>
+
+                                                                            <button id="id02" type="submit">Login</button>
+                                                                            <label>
+                                                                                <input type="checkbox" name="remember"> Remember me
+                                                                            </label>
+                                                                        </div>
+
+                                                                        <div class="container" style="background-color:#f1f1f1">
+                                                                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                                                            <span class="psw">Forgot <a href="#">password?</a></span>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>}
+
+<script>
+    var modal = document.getElementById('id01');
+
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
